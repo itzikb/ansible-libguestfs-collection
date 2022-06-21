@@ -55,21 +55,21 @@ EXAMPLES = """
 - name: Creates a user
   guestfs_user:
     image: /tmp/rhel7-5.qcow2
-    user: test_user
+    name: test_user
     password: test_password
     state: present
 
 - name: Change password to an existing user
   guestfs_user:
     image: /tmp/rhel7-5.qcow2
-    user: root
+    name: root
     password: root_password
     state: present
 
 - name: Delete a user
   guestfs_user:
     image: /tmp/rhel7-5.qcow2
-    user: root
+    name: root
     password: root_password
     state: absent
 """
