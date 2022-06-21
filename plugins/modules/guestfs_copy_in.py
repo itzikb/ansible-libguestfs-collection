@@ -22,7 +22,8 @@ options:
     description: Source file path on filesystem
   dest:
     required: True
-    description: Destination file path in guest image
+    description: Destination file path in guest image or a directory
+                 If it's a directory it the path should and with a forward slash
   recursive:
     required: False
     description: Copies nested directories from a directory on guest disk image
